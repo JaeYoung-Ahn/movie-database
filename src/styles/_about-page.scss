@@ -1,0 +1,84 @@
+@use 'variables' as *;
+@use 'typography' as *;
+
+.about-page-container {
+    background: $backgroundcolor;
+    @media(min-width: 62.5rem) {
+        height: 100vh;
+        width: 100%;
+    }
+    
+}
+
+.about-page {
+
+    h1 {
+        color: $actioncolors;
+        font-family: $headerfont;
+        font-size: 2.5rem;
+        padding: 3.5rem 1.5rem 1.5rem;
+        text-align: center;
+        margin: 0;
+        @media(min-width: 62.5rem) {
+            padding-top: 5rem;
+            line-height: 1.5;
+        }
+    }
+
+    p {
+        color: $textcolors;
+        margin: 0 1rem;
+        font-family: $regulafont;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        @media(min-width: 40rem) {
+            margin: 0 4rem;
+        }
+        @media(min-width: 48.625rem) {
+            margin: 0 auto;
+            width: 650px;
+        }
+    }
+
+    .tmdb {
+        padding-top: 5rem;
+
+        svg {
+            display: block;
+            fill:url(#linear-gradient);
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+    }
+
+    h2 {
+        color: $actioncolors;
+        font-family: $headerfont;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        @media(min-width: 62.5rem) {
+            margin-top: 5rem;
+        }
+        
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons svg {
+    background: $textcolors;
+    fill: $actioncolors;
+    border-radius: 0.8em;
+    margin: 1rem;
+    
+}
+
+.social-icons svg:hover {
+    fill: #07cdd7;
+}
